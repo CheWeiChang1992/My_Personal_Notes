@@ -27,6 +27,6 @@ Even though the values of projection are not identical, the pattern is very cons
 ![PCAtest](https://github.com/CheWeiChang1992/My_Personal_Notes/blob/master/Figures/PCAtest.png)
 
 # Tips
-1. Be aware of the dimension of the data. The samples or observations should be ordered by row.  
+1. Be aware of the dimension of the data. The samples or observations should be ordered by row when using 'svd' and 'prcomp'. However, samples should be ordered by column when calculating the correlation between samples!  
 2. When using 'svd' and 'eigen' function, we have to center the data.  
 3. When using 'princomp' and 'eigen', we need to use the correlation matrix as the input.  
