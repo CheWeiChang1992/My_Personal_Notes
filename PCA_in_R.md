@@ -16,7 +16,7 @@ For the convenience, I used our unpublished genomic data, which including 281 sa
 `pc2test = princomp(cor(t(numvcf)))`  
 `eigentest <- eigen(cor(t(apply(numvcf,2,function(x){x-mean(x)}))))`  
 
-3. Draw the figure
+3. Draw the figure  
 `par(mfrow = c(2,2))`
 `plot(pctest$x[,1],pctest$x[,2], main = "prcomp")`
 `plot(svdtest$u[,1],svdtest$u[,2], main = "svd")`
