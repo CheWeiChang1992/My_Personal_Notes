@@ -29,8 +29,10 @@ The solution of collinearity is introduced in the **pages 557 - 559 (Numerical E
  - 3. **calculating variance inflation factors (VIFs) for each variable.** If the VIF of a specific variable is too high, then it should be considered as the candidate to remove. The commonly used cut-off of VIF is >5, >10, and >20.
  
  ### Test the significance of the relationship between `Y` and `X`
- After performing the multiple regression, we should first make sure the relationship of two data table is significant. Otherwise, it is meaningless to carry out further analysis. According to the **page 632-634 of *Numerical Ecology.3rd. (Legendre, P. and Legendre, L. 2012*)**, the `R^2 = SS(Y-hat)/SS(Y)` can be computed and the F test can then conduct to test if the `R^2` is significant or not. However, this is for the situation that the `Y` is homogeneous. When `Y` is not homogeneous, we should use the permutation test.  
-**The permutation test for RDA is available in the `rda()` function in the `vegan` package.**
+ After performing the multiple regression, we should first make sure the relationship of two data table is significant. Otherwise, it is meaningless to carry out further analysis. According to the **page 632-634 of *Numerical Ecology.3rd. (Legendre, P. and Legendre, L. 2012*)**, the `R^2 = SS(Y-hat)/SS(Y)` can be computed and the F test can then conduct to test if the `R^2` is significant or not. However, this is for the situation that the `Y` is homogeneous.  
+ - **When `Y` is not homogeneous, we should use the permutation test.**  
+ - The permutation test for RDA is available in the `rda()` function in the `vegan` package.
+ - **Null hypothesis of the test: The linear relationship is not larger than the relationship between the unrelated `Y` and `X` matrics of the same size.** 
  
  ## Step2. Perform PCA on the fitted value matrix `Y-hat`
  
