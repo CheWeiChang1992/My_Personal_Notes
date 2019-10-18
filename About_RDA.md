@@ -21,7 +21,7 @@ However, before performing the first step of RDA, we need the ensure our data me
 1. `Y` is dimentionally homogeneous. If not, we have to standardize `Y`.  
 However, we should note that **the standardization is not appropriate if the meaning of `Y` will lose after standardization**, such as the species variance in a community. The homogeneity can determine whether the F test can be directly applied. But, if the our `Y` is not homogeneous **we can still conduct a permutation test to examine the significance of relationship between `Y` and `X`**, so the homogeneity is actually not a matter.   
 2. ***The variables of `X` should not be collinear with each other.*** If the problem with collinearity exists, it will make the inference of multiple regression become unstable, so we need to discard some variables.  
-
+ - **Tip**: The standardized `X` has no effect on the result of RDA, but it could be good to standardize `X` for the convenience of programming (Legendre, P. and Legendre, L. 2012).
 ### How to handle collinearity of variables in `X`?
 The solution of collinearity is introduced in the **pages 557 - 559 (Numerical Ecology.3rd. Legendre, P. and Legendre, L. 2012**). In brief, the authors recommended to 
  - 1. **ordering the variables based on their importance**, such as placing the ecological informative or easy-to-measure variable first. 
@@ -32,7 +32,8 @@ The solution of collinearity is introduced in the **pages 557 - 559 (Numerical E
  After performing the multiple regression, we should first make sure the relationship of two data table is significant. Otherwise, it is meaningless to carry out further analysis. According to the **page 632-634 of *Numerical Ecology.3rd. (Legendre, P. and Legendre, L. 2012*)**, the `R^2 = SS(Y-hat)/SS(Y)` can be computed and the F test can then conduct to test if the `R^2` is significant or not. However, this is for the situation that the `Y` is homogeneous.  
  - **When `Y` is not homogeneous, we should use the permutation test.**  
  - The permutation test for RDA is available in the `rda()` function in the `vegan` package.
- - **Null hypothesis of the test: The linear relationship is not larger than the relationship between the unrelated `Y` and `X` matrics of the same size.** 
+ - **Null hypothesis of the test:**  
+ **The linear relationship is not larger than the relationship between the unrelated `Y` and `X` matrics of the same size.** 
  
  ## Step2. Perform PCA on the fitted value matrix `Y-hat`
  
