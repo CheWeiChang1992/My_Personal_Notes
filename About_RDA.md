@@ -15,7 +15,7 @@ The detailed information regarding RDA please check:
 In sum, RDA is used when we **assume a response data matrix `Y` has a linear relationship with a explanatory data matirx `X`, and we want to investigate this relationship under the system of Euclidean distance**. If the `Y` matrix is a matrix of factors like the index matrix used in ANOVA, the the RDA is not a suitable method, and we need to switch to linear discriminant analysis (LDA). (I will not introduce LDA here)  
 
 # How RDA is done?
-## Step1. multiple linear regression
+## Step1. multiple linear regression of `Y` on `X`
 Assuming we have **a response data table `Y` which is a *n x p* matrix and a explanatory data table `X` which is a *n x m* matrix.** In the first step, the algorithm will **regress each variable of `Y` matrix (each column of `Y` represents a variable) on all variables of `X` matrix**. Then, we'll get the matrix of fitted values `Y-hat`.  
 However, before performing the first step of RDA, we need the ensure our data meet two prerequisites:  
 1. `Y` is dimentionally homogeneous. If not, we have to standardize `Y`.  
@@ -36,7 +36,8 @@ The solution of collinearity is introduced in the **pages 557 - 559 (Numerical E
  **The linear relationship is not larger than the relationship between the unrelated `Y` and `X` matrics of the same size (Legendre, P. and Legendre, L. 2012. *p.633*).** 
  
  ## Step2. Perform PCA on the fitted value matrix `Y-hat`
- 
+ After ordination, we may be interested in how many canonical axes can used to explain the linear dependence of `Y` and `X`. We can test the significance of each canonical axis using the `permutest.cca()` function in the `vegan` package.  
+Suppose we are testing the *j* th axis. The null hypothesis of the test is **'the linear dependence of the response data `Y` and the explanatory data `X` is less than *j* dimension'** (see Legendre, P. and Legendre, L. 2012. *p.634 - 635* ). 
 
  
 # What is partial RDA?
