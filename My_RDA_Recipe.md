@@ -40,6 +40,12 @@ The solution of collinearity is introduced in the **pages 557 - 559 (Numerical E
 Suppose we are testing the *j* th axis. The null hypothesis of the test is **'the linear dependence of the response data `Y` and the explanatory data `X` is less than *j* dimension'** (see Legendre, P. and Legendre, L. 2012. *p.634 - 635* ). 
 
  
-# What is partial RDA?
+
 
 # How to correct population structure?
+The RDA does 
+
+# What is partial RDA?
+
+# Memo:
+ - second RDA with only outliers
