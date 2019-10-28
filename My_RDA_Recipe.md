@@ -54,6 +54,9 @@ Moran's I is a correlation coefficient used to measure the degree of spatial aut
   
 Since Moran's I is a correlation coefficient, we can use it to do statistical test to understand if the observed data is randomly distributed or it has some spatial pattern. **The null hypothesis for this test is 'the data is randomly distributed'** (For the R tutorial, please check: https://cran.r-project.org/web/packages/adespatial/vignettes/tutorial.html)
 
+## What is Moran's eigenvector maps (MEM)?
+MEM is 
+
 # What is partial RDA?
 
 # Memo:
