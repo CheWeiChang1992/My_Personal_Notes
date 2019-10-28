@@ -45,6 +45,15 @@ Suppose we are testing the *j* th axis. The null hypothesis of the test is **'th
 # How to correct population structure?
 The RDA does 
 
+## What is Moran's I ?
+Moran's I is a correlation coefficient used to measure the degree of spatial autocorrelation. In brief, **it describes how objects are similar or dissimilar with the objects surrounding them.** It can be **any value between -1 and 1**. 
+ - ***If Moran's I is -1, it indicates the observed objects are in 'perfect dispersion' with their neighbors, which means all the nearby objects are dissimilar with the given object.***   
+ - In contrast, ***when Moran's I is 1, it indicates the objects are in 'perfect clustering'.***   
+ - ***If Moran's I is equal to 0 means completely random spatial pattern.***  
+(More details, please check: https://www.statisticshowto.datasciencecentral.com/morans-i/)  
+  
+Since Moran's I is a correlation coefficient, we can use it to do statistical test to understand if the observed data is randomly distributed or it has some spatial pattern. **The null hypothesis for this test is 'the data is randomly distributed'** (For the R tutorial, please check: https://cran.r-project.org/web/packages/adespatial/vignettes/tutorial.html)
+
 # What is partial RDA?
 
 # Memo:
