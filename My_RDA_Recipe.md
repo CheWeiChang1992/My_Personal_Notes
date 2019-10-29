@@ -72,8 +72,8 @@ Here is the E-mail from Dr. Brenna R. Forester, who proposed the method correcti
 > Best,  
 > Brenna  
   
-In the suggestion of Dr. Forester, the MEM approach used in their previous study is very conservative, and she would recommend:    
-**1. customizing the spatial weighting matrix used for correction.**  
+According to Dr. Forester's suggestion , the MEM approach used in their previous study is very conservative, and she would recommend:    
+**1. customizing the spatial weighting matrix used for MEM approach.**  
 **2. using PCs uncorrelated to environmental variables is another good option.**   
 
 
