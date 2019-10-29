@@ -65,14 +65,16 @@ Here is the E-mail from Dr. Brenna R. Forester, who proposed the method correcti
 >  
 > Thanks for your interest in our paper. I apologize that the supplement is not available online - I've repeatedly requested that the journal add it, but they have yet to do so.    
 >    
-> I've attached it here. However, please note that ***my recent (still unpublished) work has indicated that MEMs are a very conservative approach to correcting for population structure in RDA*** - and that using PCs uncorrelated with your environmental predictors may be a better way to proceed.    
+> I've attached it here. However, please note that ***my recent (still unpublished) work has indicated that MEMs are a very conservative approach to correcting for population structure in RDA*** - and that ***using PCs uncorrelated with your environmental predictors may be a better way to proceed.***    
 >  
 > If you do want to use MEMs, I would not necessarily recommend using the MEM calculation approach we used in the paper - it may work well for your data set and sampling design, but ***customizing the MEM approach based on your data set is the best approach. See this recent paper on optimizing the spatial weighting matrix (attached) with excellent supplementary tutorial (with R code, also attached) to use some newer approaches to choosing the best MEM selection approach.*** For example, with clustered sampling designs, I find that the PCNM method for MEMs works best at finding the largest scale spatial eigenvectors.    
 >    
 > Best,  
 > Brenna  
   
-In the suggestion of Dr. Forester, the MEM approach used in their previous study is very conservative, and she would recommend to customize the spatial weighting matrix used for correction.  
+In the suggestion of Dr. Forester, the MEM approach used in their previous study is very conservative, and she would recommend:    
+**1. customizing the spatial weighting matrix used for correction.**  
+**2. using PCs uncorrelated to environmental variables is another good option.**   
 
 
 # What is partial RDA?
