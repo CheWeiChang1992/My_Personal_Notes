@@ -43,7 +43,9 @@ Suppose we are testing the *j* th axis. The null hypothesis of the test is **'th
 
 
 # How to correct population structure?
-The RDA does 
+
+
+
 
 ## What is Moran's I ?
 Moran's I is a correlation coefficient used to measure the degree of spatial autocorrelation. In brief, **it describes how objects are similar or dissimilar with the objects surrounding them.** It can be **any value between -1 and 1**. 
@@ -56,6 +58,22 @@ Since Moran's I is a correlation coefficient, we can use it to do statistical te
 
 ## What is Moran's eigenvector maps (MEM)?
 MEM is 
+
+## Problem with the correction based on MEM
+Here is the E-mail from Dr. Brenna R. Forester, who proposed the method correcting population structure in RDA by using MEM ([Forester et al. 2018](https://onlinelibrary.wiley.com/doi/full/10.1111/mec.14584)):  
+> Hi Che-Wei,  
+>  
+> Thanks for your interest in our paper. I apologize that the supplement is not available online - I've repeatedly requested that the journal add it, but they have yet to do so.    
+>    
+> I've attached it here. However, please note that ***my recent (still unpublished) work has indicated that MEMs are a very conservative approach to correcting for population structure in RDA*** - and that using PCs uncorrelated with your environmental predictors may be a better way to proceed.    
+>  
+> If you do want to use MEMs, I would not necessarily recommend using the MEM calculation approach we used in the paper - it may work well for your data set and sampling design, but ***customizing the MEM approach based on your data set is the best approach. See this recent paper on optimizing the spatial weighting matrix (attached) with excellent supplementary tutorial (with R code, also attached) to use some newer approaches to choosing the best MEM selection approach.*** For example, with clustered sampling designs, I find that the PCNM method for MEMs works best at finding the largest scale spatial eigenvectors.    
+>    
+> Best,  
+> Brenna  
+  
+In the suggestion of Dr. Forester, the MEM approach used in their previous study is very conservative, and she would recommend to customize the spatial weighting matrix used for correction.  
+
 
 # What is partial RDA?
 
