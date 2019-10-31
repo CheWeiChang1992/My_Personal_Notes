@@ -6,7 +6,7 @@ This document will record my understanding regarding to the RDA technique.
 The detailed information regarding RDA please check:  
 **Numerical Ecology.3rd. Legendre, P. and Legendre, L. (2012).  Elsevier.**  
 
-# What is RDA (Redundancy analysis)?  
+# 1. What is RDA (Redundancy analysis)?  
  - 1. RDA is one of the **canonical analysis** (Canonical analysis includes **asymmetric and symmetric canonical analysis**, and **RDA is a type of asymmetric canonical analysis**.). The canonical analysis is used to **perform the direct comparisons of two or more data table.** For example, the ecologists usually use this technique to investigate the relationship between a matrix describing species composition and a table of the environmental gradients of habitats.  
  - 2. Assuming we have two matriecs `Y` and `X`, and we want to find if the components of `Y` can be explained by `X` (a general formula will be `Y ~ X`). The basic idea of canonical analysis is to **force the ordination vectors of `Y` maximally related to the combinations of variables in `X`**.  
  - 3. Asymmetric canonical analysis combines the properties of ordination and regression, which **produces the ordinations of a response matrix `Y` that are constrainted to be maximally related to the linear combination of the explanatory variables `X`.**     
@@ -14,7 +14,7 @@ The detailed information regarding RDA please check:
    
 In sum, RDA is used when we **assume a response data matrix `Y` has a linear relationship with a explanatory data matirx `X`, and we want to investigate this relationship under the system of Euclidean distance**. If the `Y` matrix is a matrix of factors like the index matrix used in ANOVA, the the RDA is not a suitable method, and we need to switch to linear discriminant analysis (LDA). (I will not introduce LDA here)  
 
-# How RDA is done?
+# 2. How RDA is done?
 ## Step1. multiple linear regression of `Y` on `X`
 Assuming we have **a response data table `Y` which is a *n x p* matrix and a explanatory data table `X` which is a *n x m* matrix.** In the first step, the algorithm will **regress each variable of `Y` matrix (each column of `Y` represents a variable) on all variables of `X` matrix**. Then, we'll get the matrix of fitted values `Y-hat`.  
 However, before performing the first step of RDA, we need the ensure our data meet two prerequisites:  
@@ -41,8 +41,7 @@ Suppose we are testing the *j* th axis. The null hypothesis of the test is **'th
 
  
 
-
-# How to correct population structure?
+# 3. How to correct population structure?
 
 
 
@@ -77,17 +76,17 @@ According to Dr. Forester's suggestion , the MEM approach used in their previous
 **2. using PCs uncorrelated to environmental variables is another good option.**   
 
 
-# What is partial RDA (Legendre, P. and Legendre, L. 2012. page 649 - 658)?
+# 4. What is partial RDA (Legendre, P. and Legendre, L. 2012. page 649 - 658)?
 In brief, partial RDA attempts to explain the response variables `Y` by using the explanatory variables `X` with the given effect of covariables `W`. To understand the partial RDA, we have to first understand what is the partial regression.
 
-## Partial regression (Legendre, P. and Legendre, L. 2012. page 570)
+## (1) Partial regression (Legendre, P. and Legendre, L. 2012. page 570)
 Suppose we have *two explanatory datasets, and there are correlatins among them*. In this situation, we may want to **estimate the amount of variation that is exlusively attributed to one of the dataset which we are interested in**. Thus, we would like to take the effect of the correlated dataset into account and control for it when fitting the model for our target dataset.  
 ### Process of partial regression
 Assume we have a vector of the response variable, called `y`, a matrix of the explanatory variables `X`, and a matrix of covariables `W`. The partial regression coefficients can be obtained by the following steps:  
  - 1. regress `y` on `W` to get the residuals `y-res|W`, and regress `X` on `W` to get residuals `X-res|W`.  
  - 2. regress `y` on `X-res|W` or regress `y-res|W` on `X-res|W`. (Two methods will generate the identical partial regression coefficients but different intercept.)  
  
-### Process of partial RDA
+## (2) Process of partial RDA
 Similarly, assume we have response variables `Y`, explanatory variables `X`, and covariables `W`. Then, the partial RDA will be done by:  
  - 1. regress `Y` on `W` to get the residuals `Y-res|W`, and regress `X` on `W` to get residuals `X-res|W`.  
  - 2. regress `Y` on `X-res|W` or regress `Y-res|W` on `X-res|W`.  
@@ -95,7 +94,7 @@ Similarly, assume we have response variables `Y`, explanatory variables `X`, and
  
  The RDA of `Y` by `X-res|W` and the RDA of `Y-res|W` by `X-res|W` have the same eigenvalues, eigenvectors, and canonical axes. In `vegan` package, the RDA is conducted based on the approach of `Y-res|W` with `X-res|W`.
  
-### Test of significance in partial RDA 
+## (3) Test of significance in partial RDA 
  Like simple RDA, we would like to know if the linear relationship between `Y` and `X` is significant or not. In the `vegan` package, `permutest.cca()` provides three types of permutation test (Legendre, P. and Legendre, L. 2012. page 652):  
   - 1. permuting the rows of `Y` (with the argument `method = "direct"`)  
   - 2. permuting the rows of `Y-res|W` (with the argument `method = "reduced"`)  
