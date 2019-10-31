@@ -39,9 +39,41 @@ The solution of collinearity is introduced in the **pages 557 - 559 (Numerical E
  After ordination, we may be interested in how many canonical axes can used to explain the linear dependence of `Y` and `X`. We can test the significance of each canonical axis using the `permutest.cca()` function in the `vegan` package.  
 Suppose we are testing the *j* th axis. The null hypothesis of the test is **'the linear dependence of the response data `Y` and the explanatory data `X` is less than *j* dimension'** (see Legendre, P. and Legendre, L. 2012. *p.634 - 635* ). 
 
- 
 
-# 3. How to correct population structure?
+
+
+
+# 3. What is partial RDA (Legendre, P. and Legendre, L. 2012. page 649 - 658)?
+The RDA method introduced above is also called 'simple RDA'. However, in some cases, **our explanatory variables may correlate with the variables that we are not interested in**. In this kind of situation, the simple RDA is not an ideal choice since we would like to **investigate the effects exlusively attributed to the specific variables** rather than confounding effects. So, to deal with this situation, we will need the partial RDA.  
+  
+In brief, partial RDA ***attempts to explain the response variables `Y` by using the explanatory variables `X` with the given effect of covariables `W`***. To understand the partial RDA, we have to first understand what is the partial regression.
+
+## (1) Partial regression (Legendre, P. and Legendre, L. 2012. page 570)
+Suppose we have *two explanatory datasets, and there are correlatins among them*. In this situation, we may want to **estimate the amount of variation that is exlusively attributed to one of the dataset which we are interested in**. Thus, we would like to take the effect of the correlated dataset into account and control for it when fitting the model for our target dataset.  
+### Process of partial regression
+Assume we have a vector of the response variable, called `y`, a matrix of the explanatory variables `X`, and a matrix of covariables `W`. The partial regression coefficients can be obtained by the following steps:  
+ - 1. regress `y` on `W` to get the residuals `y-res|W`, and regress `X` on `W` to get residuals `X-res|W`.  
+ - 2. regress `y` on `X-res|W` or regress `y-res|W` on `X-res|W`. (Two methods will generate the identical partial regression coefficients but different intercept.)  
+ 
+## (2) Process of partial RDA
+Similarly, assume we have response variables `Y`, explanatory variables `X`, and covariables `W`. Then, the partial RDA will be done by:  
+ - 1. regress `Y` on `W` to get the residuals `Y-res|W`, and regress `X` on `W` to get residuals `X-res|W`.  
+ - 2. regress `Y` on `X-res|W` or regress `Y-res|W` on `X-res|W`.  
+ - 3. perform PCA   
+ 
+ The RDA of `Y` by `X-res|W` and the RDA of `Y-res|W` by `X-res|W` have the same eigenvalues, eigenvectors, and canonical axes. In `vegan` package, the RDA is conducted based on the approach of `Y-res|W` with `X-res|W`.
+ 
+## (3) Test of significance in partial RDA 
+ Like simple RDA, we would like to know if the linear relationship between `Y` and `X` is significant or not. In the `vegan` package, `permutest.cca()` provides three types of permutation test (Legendre, P. and Legendre, L. 2012. page 652):  
+  - 1. permuting the rows of `Y` (with the argument `method = "direct"`)  
+  - 2. permuting the rows of `Y-res|W` (with the argument `method = "reduced"`)  
+  - 3. fitting the full-model `Y ~ X + W` to obtain `Y-fit|XW` and `Y-res|XW`, and then permuting the rows of `Y-res|XW` generating permuted residuals `Y*-res|XW`. Finally the permuted `Y*` is obtained by adding `Y-fit|XW` to `Y*-res|XW`. 
+  - **NOTE**: permutation test is not suitable if the covariables containing outliers.
+  
+
+
+# 4. How to correct population structure?  
+According to a recent study regarding using RDA to detect selection signatures ([Forester et al. 2018](https://onlinelibrary.wiley.com/doi/full/10.1111/mec.14584)),the 
 
 
 
@@ -75,32 +107,6 @@ According to Dr. Forester's suggestion , the MEM approach used in their previous
 **1. customizing the spatial weighting matrix used for MEM approach.**  
 **2. using PCs uncorrelated to environmental variables is another good option.**   
 
-
-# 4. What is partial RDA (Legendre, P. and Legendre, L. 2012. page 649 - 658)?
-In brief, partial RDA attempts to explain the response variables `Y` by using the explanatory variables `X` with the given effect of covariables `W`. To understand the partial RDA, we have to first understand what is the partial regression.
-
-## (1) Partial regression (Legendre, P. and Legendre, L. 2012. page 570)
-Suppose we have *two explanatory datasets, and there are correlatins among them*. In this situation, we may want to **estimate the amount of variation that is exlusively attributed to one of the dataset which we are interested in**. Thus, we would like to take the effect of the correlated dataset into account and control for it when fitting the model for our target dataset.  
-### Process of partial regression
-Assume we have a vector of the response variable, called `y`, a matrix of the explanatory variables `X`, and a matrix of covariables `W`. The partial regression coefficients can be obtained by the following steps:  
- - 1. regress `y` on `W` to get the residuals `y-res|W`, and regress `X` on `W` to get residuals `X-res|W`.  
- - 2. regress `y` on `X-res|W` or regress `y-res|W` on `X-res|W`. (Two methods will generate the identical partial regression coefficients but different intercept.)  
- 
-## (2) Process of partial RDA
-Similarly, assume we have response variables `Y`, explanatory variables `X`, and covariables `W`. Then, the partial RDA will be done by:  
- - 1. regress `Y` on `W` to get the residuals `Y-res|W`, and regress `X` on `W` to get residuals `X-res|W`.  
- - 2. regress `Y` on `X-res|W` or regress `Y-res|W` on `X-res|W`.  
- - 3. perform PCA   
- 
- The RDA of `Y` by `X-res|W` and the RDA of `Y-res|W` by `X-res|W` have the same eigenvalues, eigenvectors, and canonical axes. In `vegan` package, the RDA is conducted based on the approach of `Y-res|W` with `X-res|W`.
- 
-## (3) Test of significance in partial RDA 
- Like simple RDA, we would like to know if the linear relationship between `Y` and `X` is significant or not. In the `vegan` package, `permutest.cca()` provides three types of permutation test (Legendre, P. and Legendre, L. 2012. page 652):  
-  - 1. permuting the rows of `Y` (with the argument `method = "direct"`)  
-  - 2. permuting the rows of `Y-res|W` (with the argument `method = "reduced"`)  
-  - 3. fitting the full-model `Y ~ X + W` to obtain `Y-fit|XW` and `Y-res|XW`, and then permuting the rows of `Y-res|XW` generating permuted residuals `Y*-res|XW`. Finally the permuted `Y*` is obtained by adding `Y-fit|XW` to `Y*-res|XW`. 
-  - **NOTE**: permutation test is not suitable if the covariables containing outliers.
-  
  
 
 
