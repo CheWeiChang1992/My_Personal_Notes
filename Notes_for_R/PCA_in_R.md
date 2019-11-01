@@ -30,3 +30,9 @@ Even though the values of projection are not identical, the pattern is very cons
 1. Be aware of the dimension of the data. The samples or observations should be ordered by row when using 'svd' and 'prcomp'. However, samples should be ordered by column when calculating the correlation between samples!  
 2. When using 'svd' and 'eigen' function, we have to center the data.  
 3. When using 'princomp' and 'eigen', we need to use the correlation matrix as the input.  
+# NOTE:
+1. `svd()` vs `prcomp`:  
+ - The `d` in the `svd()` output is the sum of square without dividing by the sample size.  
+ - The `sdev` is the standard deviation (see: https://genomicsclass.github.io/book/pages/pca_svd.html)  
+2. The default of `prcomp()` use `scale = FALSE`
+
