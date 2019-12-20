@@ -73,10 +73,9 @@ Similarly, assume we have response variables `Y`, explanatory variables `X`, and
 
 
 # 4. How to correct population structure?  
-According to a recent study regarding using RDA to detect selection signatures ([Forester et al. 2018](https://onlinelibrary.wiley.com/doi/full/10.1111/mec.14584)),the 
-
-
-
+According to a recent study regarding using RDA to detect selection signatures ([Forester et al. 2018](https://onlinelibrary.wiley.com/doi/full/10.1111/mec.14584)), the correction methods were proposed based on 
+- (1) ancestry coefficients  
+- (2) Moran's eigenvector maps (MEMs)  
 
 ## What is Moran's I ?
 Moran's I is a correlation coefficient used to measure the degree of spatial autocorrelation. In brief, **it describes how objects are similar or dissimilar with the objects surrounding them.** It can be **any value between -1 and 1**. 
@@ -88,7 +87,7 @@ Moran's I is a correlation coefficient used to measure the degree of spatial aut
 Since Moran's I is a correlation coefficient, we can use it to do statistical test to understand if the observed data is randomly distributed or it has some spatial pattern. **The null hypothesis for this test is 'the data is randomly distributed'** (For the R tutorial, please check: https://cran.r-project.org/web/packages/adespatial/vignettes/tutorial.html)
 
 ## What is Moran's eigenvector maps (MEM)?
-MEM is 
+MEM is .............................
 
 ## Problem with the correction based on MEM
 Here is the E-mail from Dr. Brenna R. Forester, who proposed the method correcting population structure in RDA by using MEM ([Forester et al. 2018](https://onlinelibrary.wiley.com/doi/full/10.1111/mec.14584)):  
