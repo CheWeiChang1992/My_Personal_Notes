@@ -14,5 +14,14 @@
 ## Sequence depth
 According to [Weisweiler et al. (2019)](https://doi.org/10.1186/s12864-019-6174-3), they had around 20 million 2x150 bp reads for one sample. Their finding suggested using 1% \~ 5% of reads can still obtain acceptable prediction ability. 
   
-In their article, the authors mentioned that the cost of 20 million 2x150 bp reads is 60 Euro. If we calculate the cost according to this number, the total cost will be `(800 + 15 parents * 3 batches) * 60 = 50700 Euro`. This is definitely not possible to spend so much money on sequencing. So,
+In their article, the authors mentioned that the cost of 20 million 2x150 bp reads is 60 Euro and the library construction is 2 Euro per sample if using the latest protocol (BRB-seq; [Alpern et al. 2019](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1671-x)). (According to [Pallares et al. 2020](https://www.g3journal.org/content/ggg/10/1/143.full.pdf), the commercial RNA kits cost 35 USD \~ 44 USD per sample.)   
+
+> However, the cost of genotyping one sample with the barley 50K SNParray is with about 50 Euro \[42] also less than the mRNA sequencing analysis. When generating it newly with latest protocols and sequencing chemistry one could expect that the mRNA sequencing of **one sample would cost about 2 Euro for the mRNA library preparation \[43] as well as 60 Euro for 20 million 2x150 bp reads**.  
+
+If we calculate the cost according to this number, the total cost will be `(800 + 15 parents * 3 batches) * 62 = 52390 Euro`. This is definitely not possible to spend so much money on sequencing. So, we should use other methods for sequencing RNA.
   
+If we take the authors suggestion reducing the read number to 2 million 2x150 bp reads (10% * 20 million 2x150 bp) the cost per sample will be `(800 + 15*3) * [(60 * 0.1) + 2] = 6760 Euro` which is more affordable.
+## RNA library
+We currently have two new methods for preparing RNA library.
+- TM3'seq: [Pallares et al. 2020](https://www.g3journal.org/content/ggg/10/1/143.full.pdf) -> We will use this one
+- BRB-seq: [Alpern et al. 2019](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1671-x)
