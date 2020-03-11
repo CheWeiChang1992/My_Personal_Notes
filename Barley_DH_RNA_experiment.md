@@ -1,8 +1,11 @@
-# Experiment design
+# Introduction
+This `markdown` file is used to record the RNA experiment. 
 
-
-# Growing seedlings
-
+# Growth condition of seedlings
+## Issue
+- (1) When should we harvest seedlings?  
+-> [Weisweiler et al. (2019)](https://doi.org/10.1186/s12864-019-6174-3) collected
+(EDITING)
 
 
 # RNA extraction
