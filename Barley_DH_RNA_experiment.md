@@ -2,7 +2,7 @@
 This `markdown` file is used to record the RNA experiment. 
 
 # Cost
-## RNA extraction
+## Cost of RNA extraction
 - According to the discussion with Sonja on 12.03.2020, she said the cost of RNA extraction per sample could be around 40 Euro to the best of her knowledge (I guess she combined the cost of extraction and library construction).  
 - [Digel et al. (2015)](https://doi.org/10.1105/tpc.15.00203) (cited by [Weisweiler et al. (2019)](https://doi.org/10.1186/s12864-019-6174-3)) used RNeasy Micro Kit (Qiagen) and TRIzol (Life Technologies) to extract RNA.   
            - a. The [RNeasy Micro Kit](https://www.qiagen.com/de/products/discovery-and-translational-research/dna-rna-purification/rna-purification/total-rna/rneasy-micro-kit/?clear=true#orderinginformation) costs 508 Euro for 50 preps -> **in average 11 Euro per sample**.   
@@ -11,9 +11,14 @@ This `markdown` file is used to record the RNA experiment.
 
 - [Pallares et al. 2020](https://www.g3journal.org/content/10/1/143) developed an RNA extraction protocol based on using **[Dynabeads mRNA DIRECT Purification Kit](https://www.thermofisher.com/order/catalog/product/61012#/61012)**, and they reduce the cost to around 1.7 USD per sample. However, this cost was calculated from the method designed for Drosophila, which required 20 micro litter of beads (See [File S2 of Pallares et al. 2020](https://gsajournals.figshare.com/articles/Supplemental_Material_for_Pallares_Picard_and_Ayroles_2020/9905279)). Since our sample is much larger, more beads may needed to collect more RNA.   
 The cost of [Dynabeads mRNA DIRECT Purification Kit](https://www.thermofisher.com/order/catalog/product/61012#/61012) is 954 Euro for 10 ml, which can be used for 500 preps if following the protocol of [Pallares et al. 2020](https://www.g3journal.org/content/10/1/143). -> **the average cost per sample is 1.9 Euro... (NOT including other reagents)**  
+  
+As cost per sample for the methods mentions above is around 2 Euro just for reagent, I think we could to estimate the cost for RNA extraction to be ranging from 4 to 6 Euro per sample.
 
-## RNA library construction
+## Cost of RNA library construction
+According [Pallares et al. 2020](https://www.g3journal.org/content/10/1/143), the TM3'-seq method cost 1.5 USD per sample for the reagent. I would like to estimate it to be 2 Euro.
 
+## Cost of RNA sequencing
+If we use the 20 milion reads with 2 x 150 bp like [Weisweiler et al. (2019)](https://doi.org/10.1186/s12864-019-6174-3), **the cost would be 60 Euro per sample (10 Euro per Gb)**.
 
 # Growth condition of seedlings
 ## Issue
