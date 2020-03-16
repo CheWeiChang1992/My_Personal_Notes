@@ -1,6 +1,20 @@
 # Introduction
 This `markdown` file is used to record the RNA experiment. 
 
+# Cost
+## RNA extraction
+- According to the discussion with Sonja on 12.03.2020, she said the cost of RNA extraction per sample could be around 40 Euro to the best of her knowledge (I guess she combined the cost of extraction and library construction).  
+- [Digel et al. (2015)](https://doi.org/10.1105/tpc.15.00203) (cited by [Weisweiler et al. (2019)](https://doi.org/10.1186/s12864-019-6174-3)) used RNeasy Micro Kit (Qiagen) and TRIzol (Life Technologies) to extract RNA.   
+           - a. The [RNeasy Micro Kit](https://www.qiagen.com/de/products/discovery-and-translational-research/dna-rna-purification/rna-purification/total-rna/rneasy-micro-kit/?clear=true#orderinginformation) costs 508 Euro for 50 preps -> **in average 11 Euro per sample**.   
+           - b. The [TRIzol](https://www.thermofisher.com/order/catalog/product/15596026#/15596026) costs 262 and 381 Euro for 100 ml and 200 ml, respectively. 100 ml of TRIzol can used for 100 preps     
+      -> **the average cost would be 1.9 Euro** if using 200 ml reagent. (But other reagents are required for TRIzol method. See the table 2 of the [TRIzol user guide](http://tools.thermofisher.com/content/sfs/manuals/trizol_reagent.pdf))  
+
+- [Pallares et al. 2020](https://www.g3journal.org/content/10/1/143) developed an RNA extraction protocol based on using **[Dynabeads mRNA DIRECT Purification Kit](https://www.thermofisher.com/order/catalog/product/61012#/61012)**, and they reduce the cost to around 1.7 USD per sample. However, this cost was calculated from the method designed for Drosophila, which required 20 micro litter of beads (See [File S2 of Pallares et al. 2020](https://gsajournals.figshare.com/articles/Supplemental_Material_for_Pallares_Picard_and_Ayroles_2020/9905279)). Since our sample is much larger, more beads may needed to collect more RNA.   
+The cost of [Dynabeads mRNA DIRECT Purification Kit](https://www.thermofisher.com/order/catalog/product/61012#/61012) is 954 Euro for 10 ml, which can be used for 500 preps if following the protocol of [Pallares et al. 2020](https://www.g3journal.org/content/10/1/143). -> **the average cost per sample is 1.9 Euro... (NOT including other reagents)**  
+
+## RNA library construction
+
+
 # Growth condition of seedlings
 ## Issue
 - (1) When should we harvest seedlings?  
