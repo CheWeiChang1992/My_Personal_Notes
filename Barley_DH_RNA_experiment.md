@@ -21,6 +21,21 @@ According [Pallares et al. 2020](https://www.g3journal.org/content/10/1/143), th
 ## Cost of RNA sequencing
 If we use the 20 milion reads with 2 x 150 bp like [Weisweiler et al. (2019)](https://doi.org/10.1186/s12864-019-6174-3), **the cost would be 60 Euro per sample (10 Euro per Gb)**.
 
+
+# Pre-trial
+## First trial
+### 1. Timeline
+- Start: 2020-03-13
+- Seed germination in the growth chamber with 16 hours of light and 8 hours of darkness under 22&deg;C (from 2020-03-13 to 2020-03-18) 
+- End: 2020-03-18 (original plan is to end on 2020-03-20. However, due to the coronavirus, which made things complex and we cannot get liquid nitrogen as our plan, we terminated the trial earlier.)
+### 2. Objective
+- check the growth of seedlings
+- check the feasibility of our experiment system, including sterilization, sowing seeds, harvesting
+
+### 3. 
+
+
+
 # Growth condition of seedlings
 ## Issue
 - (1) When should we harvest seedlings?  
