@@ -32,7 +32,22 @@ If we use the 20 milion reads with 2 x 150 bp like [Weisweiler et al. (2019)](ht
 - check the growth of seedlings
 - check the feasibility of our experiment system, including sterilization, sowing seeds, harvesting
 
-### 3. 
+### 3. Process
+- `2020-03-12`: Preparation   
+                      - 1. Sterilizing beakers and tweezers with 180&deg;C \~ 200&deg;C.    
+                      - 2. Using autoclave to sterilize water (using for germination).      
+                      - 3. Cutting filter papers to fit the size of Petri dishes
+                      
+- `2020-03-13`: Preparation
+                      - 1. Using autoclave to sterilize the filter papers. The filter papers wrapped by aluminum foil.  
+                      - 2. Using microwave to sterilize water (using to rinse seeds after) -> we use microwave because it is faster than using autoclave.    
+                      
+- `2020-03-13`: Seed sterilization  
+                      - We used the sterilization protocol for wild barley -> **sterilize seeds with 4% hypochlorite with 1 min. But we used the commercial bleach (2.8% sodium sodium hypochlorite without dilution) instead.**  
+                      - **All the process of sterilization and sowing seeds were done in the laminar flow cabinet.**  
+                      - 1. Prepare bleach and sterile water in separate beakers.   
+                      - 2. 
+
 
 
 
