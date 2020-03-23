@@ -45,9 +45,16 @@ If we use the 20 milion reads with 2 x 150 bp like [Weisweiler et al. (2019)](ht
 - `2020-03-13`: Seed sterilization  
                       - We used the sterilization protocol for wild barley -> **sterilize seeds with 4% hypochlorite with 1 min. But we used the commercial bleach (2.8% sodium sodium hypochlorite without dilution) instead.**  
                       - **All the process of sterilization and sowing seeds were done in the laminar flow cabinet.**  
-                      - 1. Prepare bleach and sterile water in separate beakers.   
-                      - 2. 
-
+                      - 1. Preparing bleach and sterile water in separate beakers. And writing the IDs of accessions on the Petri dishes and their lids (Note: Ensure the lids covering Petri dishes when writing the IDs).   
+                      - 2. The seeds were sinked the bleach for 1 min and then rinsed in the sterile water  
+                      - 3. Putting seeds on a piece of filter paper in a Petri dish.  
+                      - 4. Covering seeds with a piece of filter paper  
+                      - 5. Adding 9 ml sterile water using the syringe  
+                      - 6. Covering Petri dish with the lid and using tapes to secure the lid  
+                      - 7. Moving Petri dishes into the growth chamber.
+                      
+- `2020-03-18`: Harvesting seedlings  
+                      - 1. 
 
 
 
