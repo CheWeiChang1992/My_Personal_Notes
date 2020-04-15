@@ -12,6 +12,8 @@ This `markdown` file is used to record the RNA experiment.
 
 - [Pallares et al. 2020](https://www.g3journal.org/content/10/1/143) developed an RNA extraction protocol based on using **[Dynabeads mRNA DIRECT Purification Kit](https://www.thermofisher.com/order/catalog/product/61012#/61012)**, and they reduce the cost to around 1.7 USD per sample. However, this cost was calculated from the method designed for Drosophila, which required 20 micro litter of beads (See [File S2 of Pallares et al. 2020](https://gsajournals.figshare.com/articles/Supplemental_Material_for_Pallares_Picard_and_Ayroles_2020/9905279)). Since our sample is much larger, more beads may needed to collect more RNA.   
 The cost of [Dynabeads mRNA DIRECT Purification Kit](https://www.thermofisher.com/order/catalog/product/61012#/61012) is 954 Euro for 10 ml, which can be used for 500 preps if following the protocol of [Pallares et al. 2020](https://www.g3journal.org/content/10/1/143). -> **the average cost per sample is 1.9 Euro... (NOT including other reagents)**  
+
+- **The cost of using the protocol from Sonja's colleague is about 18 Euro per library.**
   
 As cost per sample for the methods mentions above is around 2 Euro just for reagent, I think we could to estimate the cost for RNA extraction to be ranging from 4 to 6 Euro per sample.
 
@@ -54,7 +56,7 @@ If we use the 20 milion reads with 2 x 150 bp like [Weisweiler et al. (2019)](ht
                       - 7. Moving Petri dishes into the growth chamber.
                       
 - `2020-03-18`: Harvesting seedlings  
-                      - 1. 
+                      
 
 
 
