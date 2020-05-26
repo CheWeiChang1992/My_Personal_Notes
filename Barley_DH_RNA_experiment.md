@@ -45,7 +45,7 @@ If we use the 20 milion reads with 2 x 150 bp like [Weisweiler et al. (2019)](ht
                       - 2. Using microwave to sterilize water (using to rinse seeds after) -> we use microwave because it is faster than using autoclave.    
                       
 - `2020-03-13`: Seed sterilization  
-                      - We used the sterilization protocol for wild barley -> **sterilize seeds with 4% hypochlorite with 1 min. But we used the commercial bleach (2.8% sodium sodium hypochlorite without dilution) instead.**  
+                      - We used the sterilization protocol for wild barley -> **sterilize seeds with 4% hypochlorite with 1 min. But we used the commercial bleach (2.8% sodium hypochlorite without dilution) instead.**  
                       - **All the process of sterilization and sowing seeds were done in the laminar flow cabinet.**  
                       - 1. Preparing bleach and sterile water in separate beakers. And writing the IDs of accessions on the Petri dishes and their lids (Note: Ensure the lids covering Petri dishes when writing the IDs).   
                       - 2. The seeds were sinked the bleach for 1 min and then rinsed in the sterile water  
@@ -58,12 +58,49 @@ If we use the 20 milion reads with 2 x 150 bp like [Weisweiler et al. (2019)](ht
                       
 - `2020-03-18`: Harvesting seedlings  
                       - Due to the hygiene regulation would start next day, and the liquid nitrogen is not available, so we did not harvest seedlings as original plan
-                      - 1. 4 of 22 petri dishes are contaminated -> the sterilization method should be improved
-                      - 2. 2 of 22 petri dishes just germinated
-                      - 3. 15 of 22 petri dishes germinated
-                      - 4. the growth of seedling is fast than the expectation -> 5 day is enough
-                      - 5. the seed is difficult to remove from the seedling -> **maybe we need to cut the seedling and its roots? Immersing the whole seedling into liquid nitrogen should make the harvest easier.**
+                      - 1. 4 of 22 petri dishes are contaminated -> **the sterilization method should be improved**  
+                      - 2. 2 of 22 petri dishes just germinated  
+                      - 3. 15 of 22 petri dishes germinated  
+                      - 4. the growth of seedling is fast than the expectation -> 5 day is enough  
+                      - 5. the seed is difficult to remove from the seedling -> **maybe we need to cut the seedling and its roots? Immersing the whole seedling into liquid nitrogen should make the harvest easier.**  
                       
+                      
+# Communication with Prof. Stitch
+My questions:  
+  
+1. In your study, the seeds were sterilized by 1% bleach.  
+                - Could you please let me know if it means 1% of sodium hypochlorite?   
+>> `yes`  
+-> **So, we need to dilute the bleach we have, which is 2.8%**
+                - How long did the seeds stay in 1% bleach?   
+>> `5 minutes, as far as I recall`  
+-> **The time of sterilization need to be longer. This could be the reason of contamination in our first pre-trial.**
+2. When seeds germinating in Petri dishes, were the Petri dishes covered by lids?  
+>> `yes, otherwise you need to water very often`  
+-> **However, in the first pre-trail, some Petri dishes were dried out, so we may need to seal the Petri dish in the future.**
+  
+3. Was the process of sowing, including sterilization and moving seeds into Petri dishes, operated in a laminar flow cabinet or any special environment to reduce the contamination?   
+>> `we did that in laminar flow cabinet, but I am rather sure that it is not required.`   
+-> **I can try to sow the seeds out of laminar flow cabinet in the next pre-trail. If it is really not required, the workflow could be much faster.**
+Or, is it not necessary to be very cautious about the microbes in the air?   
+>> `depends on your environment`  
+
+  
+4. In your study, the seedlings were collected five days after germination.  
+Did you use a specific standard to select seedlings when the germination speed is uneven between samples?   
+>> `no, for us that was very homogenous. If you have doubts for your material, you could make the harvest stage dependent.`  
+-> According to our first pre-trail, the growth is heterogeneous...
+
+5. For the RNA extraction, you cited the work of Digel et al. (2015).  
+However, Digel et al. used the RNeasy Micro Kit (Qiagen) and TRIzol (Life Technologies) for the RNA extraction.  
+
+Could you please let me know which one was used in your study?  
+>> `the first one`
+
+
+6. Was the mRNA extracted from whole seedlings including the attached seeds, or the seeds were removed during harvesting seedlings?  
+>> `the seeds were removed`  
+
 
 
 
