@@ -54,8 +54,15 @@ If we use the 20 milion reads with 2 x 150 bp like [Weisweiler et al. (2019)](ht
                       - 5. Adding 9 ml sterile water using the syringe  
                       - 6. Covering Petri dish with the lid and using tapes to secure the lid  
                       - 7. Moving Petri dishes into the growth chamber.
+                      - Time: 3.5 hours for 22 plates (22 accessions with 12 seeds for each)
                       
 - `2020-03-18`: Harvesting seedlings  
+                      - Due to the hygiene regulation would start next day, and the liquid nitrogen is not available, so we did not harvest seedlings as original plan
+                      - 1. 4 of 22 petri dishes are contaminated -> the sterilization method should be improved
+                      - 2. 2 of 22 petri dishes just germinated
+                      - 3. 15 of 22 petri dishes germinated
+                      - 4. the growth of seedling is fast than the expectation -> 5 day is enough
+                      - 5. the seed is difficult to remove from the seedling -> **maybe we need to cut the seedling and its roots? Immersing the whole seedling into liquid nitrogen should make the harvest easier.**
                       
 
 
