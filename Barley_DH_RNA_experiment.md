@@ -83,10 +83,14 @@ In their article, the authors mentioned that the cost of 20 million 2x150 bp rea
 If we calculate the cost according to this number, the total cost will be `(800 + 15 parents * 3 batches) * 62 = 52390 Euro`. This is definitely not possible to spend so much money on sequencing. So, we should use other methods for sequencing RNA.
   
 # solution 1: reduce depth  
-If we take the authors suggestion reducing the read number to 2 million 2x150 bp reads (10% * 20 million 2x150 bp) the cost per sample will be `(800 + 15*3) * [(60 * 0.1) + 2] = 6760 Euro` which is more affordable.
+If we take the authors suggestion reducing the read number to 2 million 2x150 bp reads (10% * 20 million 2x150 bp) the cost per sample will be `(800 + 15*3) * [(60 * 0.1) + 2] = 6760 Euro` which is more affordable.  
+- The risk of this solution: by reducing the read depth, the resulted data may not informative enough for establishment of prediction models.   
+-> **The finding of [Weisweiler et al. (2019)](https://doi.org/10.1186/s12864-019-6174-3) has not been proved as a universal result that can apply to any population and any trait, so Katharina reminded me that I should not design the experiment by assuming the lower read depth can also work well in my project.
 
 # solution 2: reduce the sample size
-`10000 euro / 62 = 161 libraries`
+`10000 euro / 62 = 161 libraries`  
+- The risk of this solution: by reduce the sample size to less than 25% of original sample size, we can expect   
+- Other concerns:
 ## RNA library
 We currently have two new methods for preparing RNA library.
 - TM3'seq: [Pallares et al. 2020](https://www.g3journal.org/content/ggg/10/1/143.full.pdf) -> We will use this one
