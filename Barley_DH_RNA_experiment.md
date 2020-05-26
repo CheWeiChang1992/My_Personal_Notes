@@ -71,17 +71,17 @@ My questions:
 1. In your study, the seeds were sterilized by 1% bleach.  
                 - Could you please let me know if it means 1% of sodium hypochlorite?   
 >> `yes`  
--> **So, we need to dilute the bleach we have, which is 2.8%**
+-> **So, we need to dilute the bleach we have, which is 2.8%**  
                 - How long did the seeds stay in 1% bleach?   
 >> `5 minutes, as far as I recall`  
--> **The time of sterilization need to be longer. This could be the reason of contamination in our first pre-trial.**
+-> **The time of sterilization need to be longer. This could be the reason of contamination in our first pre-trial.**  
 2. When seeds germinating in Petri dishes, were the Petri dishes covered by lids?  
 >> `yes, otherwise you need to water very often`  
--> **However, in the first pre-trail, some Petri dishes were dried out, so we may need to seal the Petri dish in the future.**
+-> **However, in the first pre-trail, some Petri dishes were dried out, so we may need to seal the Petri dish in the future.**  
   
 3. Was the process of sowing, including sterilization and moving seeds into Petri dishes, operated in a laminar flow cabinet or any special environment to reduce the contamination?   
 >> `we did that in laminar flow cabinet, but I am rather sure that it is not required.`   
--> **I can try to sow the seeds out of laminar flow cabinet in the next pre-trail. If it is really not required, the workflow could be much faster.**
+-> **I can try to sow the seeds out of laminar flow cabinet in the next pre-trail. If it is really not required, the workflow could be much faster.**  
 Or, is it not necessary to be very cautious about the microbes in the air?   
 >> `depends on your environment`  
 
