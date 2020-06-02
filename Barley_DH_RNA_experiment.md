@@ -1,6 +1,9 @@
 # Introduction
 This `markdown` file is used to record the RNA experiment. 
 
+# Drawback of using seedling transcriptome
+To use the seedling transcriptome, the seed reproduction will be necessary because we CANNOT keep the seedlings. Thus, a very apperant weakness is this method can apply to the inbred lines or DH lines. Also, the reproduction will require an additional generation, which further limits its usage.
+
 # Cost
 ## Cost of RNA extraction
 - According to the discussion with Sonja on 12.03.2020, she said the cost of RNA extraction per sample could be around 40 Euro to the best of her knowledge (I guess she combined the cost of extraction and library construction).  
