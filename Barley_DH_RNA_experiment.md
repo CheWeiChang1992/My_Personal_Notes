@@ -54,7 +54,7 @@ If we use the 20 milion reads with 2 x 150 bp like [Weisweiler et al. (2019)](ht
                       - 5. Adding 9 ml sterile water using the syringe  
                       - 6. Covering Petri dish with the lid and using tapes to secure the lid  
                       - 7. Moving Petri dishes into the growth chamber.
-                      - Time: 3.5 hours for 22 plates (22 accessions with 12 seeds for each)
+                      - **Time: 3.5 hours for 22 plates (22 accessions with 12 seeds for each)** -> we need to improve this....
                       
 - `2020-03-18`: Harvesting seedlings  
                       - Due to the hygiene regulation would start next day, and the liquid nitrogen is not available, so we did not harvest seedlings as original plan
@@ -107,7 +107,7 @@ Could you please let me know which one was used in your study?
 # Growth condition of seedlings
 ## Issue
 - (1) When should we harvest seedlings?  
--> [Weisweiler et al. (2019)](https://doi.org/10.1186/s12864-019-6174-3) collected
+-> According to our first pre-trial, the five days are enough (seven days will be too many), but the growth of seedlings is not homogeneous (the reason is still not clear.)
 (EDITING)
 
 
@@ -134,7 +134,11 @@ If we take the authors suggestion reducing the read number to 2 million 2x150 bp
 # solution 2: reduce sample size
 `10000 euro / 62 = 161 libraries`  
 - Drawback: by reduce the sample size to less than 25% of original sample size, we can expect the accuracy of model will decline and also the conclusion obtained from this model will be less general.  
-  
+## Sample selection
+If we choose to reduce the sample size, then the next question will be how to select sub-sample. This question depent on the study objective:  
+- study the effect of crosses, such as sampling mainly from a population with the wild parent and a population without the wild parent -> **we may sample about 4 populaitons with 40 lines for each or sampling 100 lines from a single elite line population and 60 lines for 1 or 2 other populations.**  
+- study the effect of diverse genetic background -> **we may equally sample about 10 lines from 14 populations.**  
+- **NOTE**: We need to check the metabolic data and the phenotypic data to prevent wasting money on sequencing for the lines without complete data.
   
 ## RNA library
 We currently have two new methods for preparing RNA library.
